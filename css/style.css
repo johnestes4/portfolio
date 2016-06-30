@@ -11,7 +11,7 @@ body {
   background-size: cover;
   background-position: center;
   color: white;
-  font-family: cambria;
+  font-family: 'sans-serif', scambria;
 }
 a {
   text-decoration: none;
@@ -30,7 +30,7 @@ header {
   background-color: rgb(20, 20, 20);
   height: 350px;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   width: 100%;
   left:0;
 }
@@ -55,7 +55,7 @@ img {
   margin-top: -20px;
 }
 input {
-  border: 10;
+  border: 10px;
   padding: 30px;
   font-size: 28px;
 }
@@ -92,8 +92,8 @@ nav {
 }
 p {
   font-size: 20px;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 #social {
   width: 50px;
@@ -145,6 +145,16 @@ p {
   max-height: 360px;
   vertical-align: top;
 }
+.imageright img, .imageleft img{
+  width: 95%;
+  height:95%;
+  overflow: hidden;
+}
+.imageright img:hover, .imageleft img:hover{
+  width: 100%;
+  height: 100%;
+  transition:.5s;
+}
 .textleft {
   width: 25%;
   display: inline-block;
@@ -159,10 +169,21 @@ p {
   margin-right: 0;
   margin-right: 15px;
 }
-@media (max-width: 640px) {
+@media (max-width: 800px) {
   p {
     font-size: 20px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+  .row h3 {
+     text-align: center;
+   }
+   .imageleft, .imageright {
+    margin: 0 auto;
+  }
+  .textleft, .textright {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
   }
 }
